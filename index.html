@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dilshod — Frontend Developer</title>
+  <meta name="description" content="Frontend developer — Modern, responsive landing page built with TailwindCSS and vanilla JS. Live demo and source code included." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#4f46e5',
+            accent: '#06b6d4'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="antialiased bg-gray-50 text-gray-800">
+  <header class="bg-white shadow">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex justify-between items-center py-4">
+        <a href="#" class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-bold">DM</div>
+          <span class="font-semibold text-lg">Dilshod</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#features" class="hover:text-primary">Features</a>
+          <a href="#portfolio" class="hover:text-primary">Portfolio</a>
+          <a href="#pricing" class="hover:text-primary">Pricing</a>
+          <a href="#contact" class="px-4 py-2 bg-primary text-white rounded-lg hover:opacity-95">Hire me</a>
+        </nav>
+        <button id="nav-toggle" class="md:hidden p-2 rounded-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <a href="#features" class="block py-2">Features</a>
+      <a href="#portfolio" class="block py-2">Portfolio</a>
+      <a href="#pricing" class="block py-2">Pricing</a>
+      <a href="#contact" class="block py-2 bg-primary text-white text-center rounded-md py-2">Hire me</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="relative overflow-hidden">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-12 py-20">
+          <div>
+            <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">I build beautiful, fast <span class="text-primary">frontend</span> experiences</h1>
+            <p class="mt-6 text-lg text-gray-600">Frontend developer specializing in React, TailwindCSS, and modern responsive UI. I help startups and businesses turn designs into pixel-perfect, accessible web apps.</p>
+            <div class="mt-8 flex gap-4">
+              <a href="#contact" class="inline-flex items-center gap-3 px-6 py-3 bg-primary text-white rounded-lg shadow hover:opacity-95">Hire me</a>
+              <a href="#portfolio" class="inline-flex items-center gap-3 px-6 py-3 bg-white border rounded-lg">View portfolio</a>
+            </div>
+            <ul class="mt-8 flex flex-wrap gap-4 text-sm text-gray-500">
+              <li class="flex items-center gap-2">✅ Responsive & fast</li>
+              <li class="flex items-center gap-2">✅ Accessible</li>
+              <li class="flex items-center gap-2">✅ Clean code</li>
+            </ul>
+          </div>
+          <div class="relative">
+            <div class="rounded-2xl shadow-lg overflow-hidden bg-gradient-to-br from-white to-gray-50">
+              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=abc" alt="demo" class="w-full object-cover h-72 md:h-96" />
+            </div>
+            <div class="absolute -bottom-6 left-6 bg-white rounded-xl shadow p-4 w-48">
+              <p class="text-xs text-gray-500">Recent project</p>
+              <p class="font-semibold">Startup landing page</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="features" class="py-16">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="text-center max-w-2xl mx-auto">
+          <h2 class="text-3xl font-bold">What I do</h2>
+          <p class="mt-4 text-gray-600">Frontend development, performance optimization, responsive layouts, and accessible components.</p>
+        </div>
+        <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="p-6 bg-white rounded-lg shadow">
+            <h3 class="font-semibold">Modern UI</h3>
+            <p class="mt-2 text-sm text-gray-500">Pixel-perfect interfaces using Tailwind and component-driven design.</p>
+          </div>
+          <div class="p-6 bg-white rounded-lg shadow">
+            <h3 class="font-semibold">Performance</h3>
+            <p class="mt-2 text-sm text-gray-500">Code-splitting, lazy loading and best practices for fast loading sites.</p>
+          </div>
+          <div class="p-6 bg-white rounded-lg shadow">
+            <h3 class="font-semibold">Accessibility</h3>
+            <p class="mt-2 text-sm text-gray-500">Semantic HTML, keyboard navigation and ARIA where needed.</p>
+          </div>
+          <div class="p-6 bg-white rounded-lg shadow">
+            <h3 class="font-semibold">Responsive</h3>
+            <p class="mt-2 text-sm text-gray-500">Mobile-first design that looks great on any screen size.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="py-16 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-8">
+          <h2 class="text-3xl font-bold">Selected projects</h2>
+          <p class="text-gray-600 mt-2">Live demos and GitHub links included in the full portfolio.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <article class="bg-white rounded-lg shadow overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=abc" alt="project" class="w-full h-40 object-cover" />
+            <div class="p-4">
+              <h3 class="font-semibold">Landing page for SaaS</h3>
+              <p class="text-sm text-gray-500 mt-2">React + Tailwind, analytics and form integration.</p>
+              <div class="mt-4 flex gap-3">
+                <a href="#" class="text-primary text-sm">Live</a>
+                <a href="#" class="text-sm">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-lg shadow overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=abc" alt="project" class="w-full h-40 object-cover" />
+            <div class="p-4">
+              <h3 class="font-semibold">E-commerce UI</h3>
+              <p class="text-sm text-gray-500 mt-2">React, Context API, responsive product grid.</p>
+              <div class="mt-4 flex gap-3">
+                <a href="#" class="text-primary text-sm">Live</a>
+                <a href="#" class="text-sm">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-lg shadow overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=abc" alt="project" class="w-full h-40 object-cover" />
+            <div class="p-4">
+              <h3 class="font-semibold">Blog UI</h3>
+              <p class="text-sm text-gray-500 mt-2">Static site with React Router and markdown content.</p>
+              <div class="mt-4 flex gap-3">
+                <a href="#" class="text-primary text-sm">Live</a>
+                <a href="#" class="text-sm">Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="py-16">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <h2 class="text-3xl font-bold">Pricing</h2>
+        <p class="mt-2 text-gray-600">Simple pricing for typical frontend jobs. Contact for custom quotes.</p>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-6 bg-white rounded-lg shadow">
+            <h3 class="font-semibold">Basic</h3>
+            <p class="mt-2 text-gray-500 text-sm">Single-page landing — from $80</p>
+          </div>
+          <div class="p-6 bg-white rounded-lg shadow border-2 border-primary">
+            <h3 class="font-semibold">Standard</h3>
+            <p class="mt-2 text-gray-500 text-sm">Multi-page site or SPA — from $250</p>
+          </div>
+          <div class="p-6 bg-white rounded-lg shadow">
+            <h3 class="font-semibold">Advanced</h3>
+            <p class="mt-2 text-gray-500 text-sm">E-commerce or custom UI — from $600</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-16 bg-gray-50">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-6">
+          <h2 class="text-3xl font-bold">Let's work together</h2>
+          <p class="mt-2 text-gray-600">Send a message and I will reply within 24 hours.</p>
+        </div>
+        <form class="bg-white rounded-lg shadow p-6 grid grid-cols-1 gap-4">
+          <div>
+            <label class="text-sm">Your name</label>
+            <input type="text" placeholder="Name" class="mt-1 block w-full rounded-md border-gray-200 shadow-sm" />
+          </div>
+          <div>
+            <label class="text-sm">Email</label>
+            <input type="email" placeholder="you@example.com" class="mt-1 block w-full rounded-md border-gray-200 shadow-sm" />
+          </div>
+          <div>
+            <label class="text-sm">Message</label>
+            <textarea rows="4" placeholder="Project details" class="mt-1 block w-full rounded-md border-gray-200 shadow-sm"></textarea>
+          </div>
+          <div class="text-right">
+            <button type="submit" class="px-6 py-2 bg-primary text-white rounded-lg">Send message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="bg-white border-t">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-sm">© <span id="year"></span> YourName — Frontend Developer</p>
+        <div class="flex gap-4 text-sm">
+          <a href="#" class="hover:text-primary">GitHub</a>
+          <a href="#" class="hover:text-primary">LinkedIn</a>
+          <a href="#" class="hover:text-primary">Fiverr</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('nav-toggle').addEventListener('click', function(){
+      var m = document.getElementById('mobile-menu');
+      m.classList.toggle('hidden');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    document.querySelector('form').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Thanks! This demo form does not send messages. Replace with your form endpoint or use Formspree/Netlify Forms.');
+    });
+  </script>
+
+</body>
+</html>
